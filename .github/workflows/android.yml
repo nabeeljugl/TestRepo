@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - name: add libraries
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: git clone https://github.com/nabeeljugl/TestRepoLib.git
 
     - uses: actions/checkout@v3
