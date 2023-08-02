@@ -13,10 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: add libraries
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      run: git clone https://github.com/nabeeljugl/TestRepoLib.git
+    - name: Setup SSH key for private submodule
+      run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git clone https://github.com/nabeeljugl/TestRepoLib.git
 
     - uses: actions/checkout@v3
     - name: set up JDK 11
