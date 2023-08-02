@@ -15,9 +15,11 @@ jobs:
     - uses: actions/checkout@v3
     - name: Setup Module
       run: |
+        git config --global user.name "nabeeljugl"
+
         git config --global user.email "nabeel.ahamed@jugl.com"
         git config --global user.password "khilafat2050"
-        git clone https://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@github.com/Joiint/jugl-android-chat.git
+        git clone https://github.com/nabeeljugl/TestRepoLib.git
 
     - uses: actions/checkout@v3
     - name: set up JDK 11
