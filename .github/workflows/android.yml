@@ -17,7 +17,5 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
-        git config --local user.name "nabeeljugl"
-        git config --local user.email "nabeel.ahamed@joiint.com"
-        git config --local user.password "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"
+        git config --global credential.helper
         git clone https://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@github.com/Joiint/jugl-android-chat.git
