@@ -14,6 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Setup Module
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         git config --global user.name "nabeeljugl"
         git config --global user.email "nabeel.ahamed@joiint.com"
