@@ -18,7 +18,7 @@ jobs:
         git config --global user.name "nabeeljugl"
 
         git config --global user.email "nabeel.ahamed@jugl.com"
-        git config --global user.password "khilafat2050"
+        git config --global user.password "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"
         git clone https://github.com/nabeeljugl/TestRepoLib.git
 
     - uses: actions/checkout@v3
