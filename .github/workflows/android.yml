@@ -17,9 +17,9 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
-        git config --global user.name "nabeeljugl"
-        git config --global user.email "nabeel.ahamed@joiint.com"
-        git config --global user.password "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"
+        git config --local user.name "nabeeljugl"
+        git config --local user.email "nabeel.ahamed@joiint.com"
+        git config --local user.password "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"
         git clone https://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@github.com/Joiint/jugl-android-chat.git
 
 
