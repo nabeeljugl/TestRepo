@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: git set up
+      run :git config --global user.name "nabeeljugl"
+
+
     - uses: actions/checkout@v3
       with:
           # Include submodules from the repository
