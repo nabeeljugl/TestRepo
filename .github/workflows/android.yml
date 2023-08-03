@@ -18,7 +18,8 @@ jobs:
         git config --global user.name "nabeeljugl"
         git config --global user.email "nabeel.ahamed@joiint.com"
         git config --global user.password "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"
-        git clone https://github.com/nabeeljugl/TestRepoLib.git
+        git clone https://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@github.com/Joiint/jugl-android-chat.git
+
 
     - uses: actions/checkout@v3
     - name: set up JDK 11
