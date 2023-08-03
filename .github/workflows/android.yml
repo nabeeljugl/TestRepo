@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: git set up
-      run :git config --global user.name "nabeeljugl"
+      run:  git config --global user.name "nabeeljugl"
 
 
     - uses: actions/checkout@v3
