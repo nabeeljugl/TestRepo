@@ -17,5 +17,5 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
-        git config --global credential.helper
+        git config --global credential.helper store
         git clone https://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@github.com/Joiint/jugl-android-chat.git
