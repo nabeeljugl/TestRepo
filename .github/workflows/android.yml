@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Checkout main repository
-        uses: actions/checkout@v3
-        with:
+      with:
           # Include submodules from the repository
           submodules: true
     - uses: actions/checkout@v3
