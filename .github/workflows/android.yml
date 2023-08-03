@@ -20,7 +20,7 @@ jobs:
       with:
           # Include submodules from the repository
           submodules: recursive
-          token:  {{ secrets.ACCESS_TOKEN }}
+          token: {{ secrets.ACCESS_TOKEN }}
     - name: set up JDK 11
       uses: actions/setup-java@v3
       with:
